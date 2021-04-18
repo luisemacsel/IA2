@@ -20,7 +20,7 @@ def buscar_posicion(value,map, t=True):
         return (0,0)
     for index,fila in enumerate(map):
         if value in fila: #fila es la fila entera. index es el numero de la fila donde esta el valor buscado         
-            fila = list(fila) #fila es del tipo numpy.ndarray y no tiene atributo index. con esta linea arreglo eso. Es un cambio de tipo de variable
+            fila = list(fila) 
             columna = fila.index(value)    #columna en la que esta el valor buscado
             return (index,columna)
     else: return (0,0)

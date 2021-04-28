@@ -23,7 +23,6 @@ def buscar_posicion(value,map, t=True):
             columna = list(fila).index(value)    #columna en la que esta el valor buscado
             return (index,columna)
     else: return (0,0)
-
 def a_star(map,a,b): 
     OPEN = []   #lista de nodos por investigar
     CLOSED = [] #lista de nosos ya investigados
@@ -39,7 +38,7 @@ def a_star(map,a,b):
         return nodo.f
         
     while estado_actual.pos != objetivo.pos:
-        OPEN.sort(key=get_f)
+        OPEN.sort(key=get_f)    #metodo sort ordena la lista open de acuerdo al nodo.f
         estado_actual = OPEN[0]
         OPEN.pop(0)
         CLOSED.append(estado_actual)  #lo ponemos en la lista de ya explorados
@@ -96,6 +95,7 @@ def main():
     # print(buscar_posicion(b, map))
     solution = a_star(map,a,b)
     print("Camino optimo:")
+    print("hola mundo")
     print(solution)
     for pos in solution:
         map[pos] = 1 #Camino optimo completar con unos

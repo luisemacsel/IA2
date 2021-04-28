@@ -100,6 +100,7 @@ def main():
     for pos in solution:
         map[pos] = 1 #Camino optimo completar con unos
     print(np.matrix(map))
+    print("hola Luis")
 
 if __name__ == "__main__":
     main()

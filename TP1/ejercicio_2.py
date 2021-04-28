@@ -89,13 +89,12 @@ def main():
                     [ 0, 21, 22,  0, 45, 46,  0],
                     [ 0, 23, 24,  0, 47, 48,  0],
                     [ 0,  0,  0,  0,  0,  0,  0]])
-    a=25 #inicio 
+    a=1 #inicio 
     b=46 #fin
     # print(buscar_posicion(a, map))
     # print(buscar_posicion(b, map))
     solution = a_star(map,a,b)
     print("Camino optimo:")
-    print("hola mundo")
     print(solution)
     for pos in solution:
         map[pos] = 1 #Camino optimo completar con unos

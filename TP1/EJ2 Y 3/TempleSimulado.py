@@ -75,5 +75,5 @@ def TempleSimulado(TempInicial,TempFinal,SecEnfr,SolucionInicial):
         Temp=Temp*SecEnfr
         iter+=1
         
-TempleSimulado(2500,0.01,0.99,SolucionInicial)
+TempleSimulado(2500,0.01,0.8,SolucionInicial)
 

@@ -101,3 +101,23 @@ graficar(vNP,NPVel,'NP','w [rad/s]')
 graficar(vZ,ZVel,'Z','w [rad/s]')
 graficar(vPP,NPVel,'PP','w [rad/s]')
 graficar(vPG,PGVel,'PG','w [rad/s]')
+
+"""
+    Calculo de la funcion del borrosificador de la fuerza
+"""
+NGF=hombroizq(-4,-12,-8,4,0)
+fNG=vecx(-12,-4)
+fNP=vecx(-8,0)
+NPF=triangulo(-8,-4,0,0.0001,0.25)
+fZ=vecx(-4,4)
+ZF=triangulo(-4,0,4,0.0001,0.25)
+fPP=vecx(0,8)
+PPF=triangulo(0,4,8,0.0001,0.25)
+fPG=vecx(4,12)
+PGF=hombroder(12,4,8,4,0)
+
+graficar(fNG,NGF,'NG','f [N]')
+graficar(fNP,NPF,'NP','f [N]')
+graficar(fZ,ZF,'Z','f [N]')
+graficar(fPP,NPF,'PP','f [N]')
+graficar(fPG,PGF,'PG','f [N]')

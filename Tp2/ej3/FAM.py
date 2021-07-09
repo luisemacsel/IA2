@@ -1,3 +1,4 @@
+from FBorrosificador import *
 import numpy as np
 """
     Figual , funcion para cundo los consecuntes son iguales ej: F es PP Y F es PP
@@ -5,7 +6,7 @@ import numpy as np
 """
 def Figual(A1,A2,B1,B2):
     f=max(min(A1,A2),min(B1,B2))  #conjunto borroso de salida
-    pass
+    return (f)
 """
     Fdistinto , funcion para cundo los consecuntes son distintos ej: F es Z Y F es PP
     vmed :valor medio de la funcion borrosa ej:PP
@@ -15,8 +16,7 @@ def Fdistinto(A1,A2,B1,B2,vmed1,vmed2):
     vpertenecia1=min(A1,A2)   #disyuncion
     vpertenecia2=min(B1,B2)   #disyuncion
     f=((vmed1*vpertenecia1+vmed2*vpertenecia2)/(vpertenecia1+vpertenecia2))    #desborrosificador por media de centros
-    
-    pass
+    return(f)
 """
 FAM: tabla de doble entrada (desplazamiento angular y velocidad angular , salida fuerza)
     THETA NG NP Z PP PG
@@ -29,9 +29,9 @@ PG        X  X  X  X  X
 X puede ser NG,NP,Z,PP o PG ,
 son los valores que toma la fuerza con sierta velocidad y desplazamiento angular 
 """
-FAM=[["PP","PP","PP","PP","PP"],
-     ["PP","PP","PP","PP","PP"],
-     ["PP","PP","PP","PP","PP"],
-     ["PP","PP","PP","PP","PP"],
-     ["PP","PP","PP","PP","PP"]]
-print(FAM)
+FAM=[["PPF","PPF","PPF","PPF","PPF"],
+     ["PPF","PPF","PPF","PPF","PGF"],
+     ["PPF","PPF","PPF","PPF","PPF"],
+     ["PPF","PPF","PPF","PPF","PGF"],
+     ["PPF","PPF","PPF","PPF","PPF"]]
+

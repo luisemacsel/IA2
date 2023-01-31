@@ -1,0 +1,10 @@
+(op-fresado orientacion-x s4 slot fresado)
+(setup-orientacion orientacion-x orientacion+x)
+(op-fresado orientacion+x s2 slot fresado)
+(op-fresado orientacion+x s6 slot fresado)
+(setup-orientacion orientacion+x orientacion+z)
+(op-fresado orientacion+z h1 blind-hole fresado)
+(op-fresado orientacion+z s10 slot fresado)
+(op-fresado orientacion+z s9 slot fresado)
+; cost = 8 (unit cost)
+
